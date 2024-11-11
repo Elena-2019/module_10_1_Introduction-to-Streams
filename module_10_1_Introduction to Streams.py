@@ -22,20 +22,20 @@ time_1 = time_end_1 - time_start_1
 print(time_1)
 
 time_start_2 = datetime.now()
-example1 = Thread(target=write_words, args=(10, 'example5.txt'))
-example2 = Thread(target=write_words, args=(30, 'example6.txt'))
-example3 = Thread(target=write_words, args=(200, 'example7.txt'))
-example4 = Thread(target=write_words, args=(100, 'example8.txt'))
+example5 = Thread(target=write_words, args=(10, 'example5.txt'))
+example6 = Thread(target=write_words, args=(30, 'example6.txt'))
+example7 = Thread(target=write_words, args=(200, 'example7.txt'))
+example8 = Thread(target=write_words, args=(100, 'example8.txt'))
 
-example1.start()
-example2.start()
-example3.start()
-example4.start()
+example5.start()
+example6.start()
+example7.start()
+example8.start()
 
-example1.join()
-example2.join()
-example3.join()
-example4.join()
+example5.join()
+example6.join()
+example7.join()
+example8.join()
 
 time_end_2 = datetime.now()
 time_2 = time_end_2 - time_start_2
